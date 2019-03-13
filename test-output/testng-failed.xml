@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SauceDemo]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.saucedemo.utilities.ListenerTestNG"/>
+  </listeners>
+  <test thread-count="5" name="Add To Cart Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.saucedemo.tests.ValidateAddToCartTest">
+        <methods>
+          <include name="test_AddToCart"/>
+          <include name="setUp"/>
+          <include name="setReportLogging"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.saucedemo.tests.ValidateAddToCartTest -->
+    </classes>
+  </test> <!-- Add To Cart Test(failed) -->
+</suite> <!-- Failed suite [SauceDemo] -->
